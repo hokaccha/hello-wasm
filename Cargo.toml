@@ -1,9 +1,13 @@
 [package]
 name = "hello-wasm"
 version = "0.1.0"
-authors = ["Kazuhito Hokamura <kazuhito-hokamura@cookpad.com>"]
-edition = "2018"
+authors = ["Kazuhito Hokamura <k.hokamura@gmail.com>"]
+description = "A sample project with wasm-pack"
+license = "MIT/Apache-2.0"
+repository = "https://github.com/hokaccha/hello-wasm"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
 
 [dependencies]
+wasm-bindgen = "0.2"
