@@ -1,4 +1,4 @@
-const js = import("./node_modules/hello-wasm/hello_wasm.js");
-js.then((js) => {
-  js.greet("WebAssembly");
-});
+(async () => {
+  const { greet } = await import("../pkg/hello_wasm.js");
+  greet("WebAssembly");
+})();
